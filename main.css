@@ -1,0 +1,113 @@
+
+:root {
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* Dark theme colors */
+  --bg: #0f1115;
+  --bg-muted: #161922;
+  --text: #e6e8eb;
+  --text-muted: #a5acb8;
+  --border: #2a2f3a;
+  --accent: #5da9ff;
+  --accent-muted: #2f5fa5;
+}
+
+/* Light theme (future toggle) */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-muted: #f4f6f8;
+  --text: #1a1d21;
+  --text-muted: #5f6b7a;
+  --border: #d8dee6;
+  --accent: #2563eb;
+  --accent-muted: #93c5fd;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* =========================
+   Layout
+   ========================= */
+
+header,
+main,
+footer {
+  max-width: 72rem;
+  padding: var(--space-lg);
+  margin-inline: auto;
+}
+
+header {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-md);
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: .75rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* =========================
+   Small Screens
+   ========================= */
+
+@media (max-width: 640px) {
+  header,
+  main,
+  footer {
+    padding: var(--space-md);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

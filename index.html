@@ -2,12 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>personal_site</title>
+    <link href="main.css" rel="stylesheet"/>
+    <title>Jakob Edelstein</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <header>
+      <div id="page-title">
+        <h1>Jakob Edelstein</h1>
+        <p>Software Engineer</p>
+      </div>
+      <nav>
+        <a href="/">About</a>
+        <a href="/">Projects</a>
+        <a href="/">Resume</a>
+        <a href="/">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <p>
+        I'll build out this site at some point maybe. For now I'm just playing
+        around with deploying via AWS.
+      </p>
+    </main>
   </body>
+  <style>
+  #page-title {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+  </style>
 </html>
