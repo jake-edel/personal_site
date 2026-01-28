@@ -1,4 +1,3 @@
-
 :root {
   --font-sans:
     system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -28,15 +27,14 @@
   --accent-muted: #2f5fa5;
 }
 
-/* Light theme (future toggle) */
 [data-theme="light"] {
-  --bg: #ffffff;
-  --bg-muted: #f4f6f8;
-  --text: #1a1d21;
-  --text-muted: #5f6b7a;
-  --border: #d8dee6;
+  --bg: #f7f8fa;
+  --bg-muted: #eef1f5;
+  --text: #1f2937;
+  --text-muted: #4b5563;
+  --border: #d6dbe3;
   --accent: #2563eb;
-  --accent-muted: #93c5fd;
+  --accent-muted: #bfdbfe;
 }
 
 html {
@@ -46,7 +44,6 @@ html {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  line-height: 1.6;
   background-color: var(--bg);
   color: var(--text);
 }
@@ -56,16 +53,14 @@ body {
    ========================= */
 
 header,
-main,
-footer {
+main {
   max-width: 72rem;
   padding: var(--space-lg);
   margin-inline: auto;
 }
 
-header {
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-md);
+h1 {
+  margin: 0px;
 }
 
 /* =========================
@@ -76,7 +71,7 @@ nav a {
   color: var(--text-muted);
   text-decoration: none;
   font-weight: 500;
-  margin-right: .75rem;
+  margin-right: var(--space-md);
 }
 
 nav a:hover {

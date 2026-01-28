@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="main.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet" />
     <title>Jakob Edelstein</title>
   </head>
   <body>
     <header>
-      <div id="page-title">
+      <div id="title">
         <h1>Jakob Edelstein</h1>
-        <p>Software Engineer</p>
+        <span>Software Engineer</span>
       </div>
       <nav>
         <a href="/">About</a>
@@ -20,17 +20,18 @@
       </nav>
     </header>
     <main>
-      <p>
-        I'll build out this site at some point maybe. For now I'm just playing
-        around with deploying via AWS.
-      </p>
+      <p>I build software systems for the finance industry.</p>
     </main>
   </body>
   <style>
-  #page-title {
-    display: flex;
-    align-items: center;
-    column-gap: 2rem;
-  }
+    #title {
+      display: flex;
+      gap: var(--space-md);
+      align-items: baseline;
+      margin-bottom: var(--space-xs);
+    }
   </style>
+  <script>
+    document.documentElement.dataset.theme = "dark";
+  </script>
 </html>
