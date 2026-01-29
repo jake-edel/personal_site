@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  margin: 1rem;
+  margin: 3rem;
   width: auto;
   font-family: var(--font-sans);
   background-color: var(--bg);
@@ -52,11 +52,13 @@ body {
 /* =========================
    Layout
    ========================= */
+header {
+  margin-bottom: 3rem;
+}
 
 header,
 main {
   max-width: 72rem;
-  padding: var(--space-lg);
   margin-inline: auto;
 }
 
