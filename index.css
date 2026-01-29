@@ -42,7 +42,8 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
+  width: auto;
   font-family: var(--font-sans);
   background-color: var(--bg);
   color: var(--text);
@@ -105,4 +106,12 @@ a:hover {
   h1 {
     font-size: 2rem;
   }
+}
+
+[data-page] {
+  transition: opacity 2s ease-out;
+}
+
+[data-page][hidden] {
+  display: none;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="index.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
     <title>Jakob Edelstein</title>
   </head>
   <body>
@@ -13,14 +14,36 @@
         <span>Software Engineer</span>
       </div>
       <nav>
-        <a href="/">About</a>
-        <a href="/">Projects</a>
-        <a href="/">Resume</a>
-        <a href="/">Contact</a>
+        <a href="/about" data-nav>About</a>
+        <a href="/projects" data-nav>Projects</a>
+        <a href="/resume" data-nav>Resume</a>
+        <a href="/contact" data-nav>Contact</a>
       </nav>
     </header>
     <main>
-      <p>I build software systems for the finance industry.</p>
+      <section id="about" data-page>
+        <h1>About</h1>
+        <p>I build software systems for the finance industry.</p>
+      </section>
+
+      <section id="projects" data-page hidden>
+        <h1>Projects</h1>
+      </section>
+
+      <section id="resume" data-page hidden>
+        <img
+          src="assets/je_resume.png"
+          alt="Jakob Edelstein's resume"
+          style="width: 100%"
+        >
+      </section>
+
+      <section id="contact" data-page hidden>
+        <h1>Contact</h1>
+        <p>📱: +1 516 459 3979</p>
+        <p>📧: jakobedelstein@gmail.com</p>
+        <a href="www.linkedin.com/in/jakob-edel">www.linkedin.com/in/jakob-edel</a>
+      </section>
     </main>
   </body>
   <style>
@@ -31,7 +54,4 @@
       margin-bottom: var(--space-xs);
     }
   </style>
-  <script>
-    document.documentElement.dataset.theme = "dark";
-  </script>
 </html>
